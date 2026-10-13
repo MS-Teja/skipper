@@ -1,0 +1,27 @@
+{
+  // Judge smoothness on "release" or "profile". Debug builds run unoptimised
+  // code and always stutter on Android.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Skipper (release)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "args": ["--dart-define=DEMO=true"]
+    },
+    {
+      "name": "Skipper (profile)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "args": ["--dart-define=DEMO=true"]
+    },
+    {
+      "name": "Skipper (debug, fresh start)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug"
+    }
+  ]
+}
